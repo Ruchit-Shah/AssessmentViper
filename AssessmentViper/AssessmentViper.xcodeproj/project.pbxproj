@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE0AF57E2C6337380037617D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF57D2C6337380037617D /* AppDelegate.swift */; };
+		BE0AF5822C6337380037617D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF5812C6337380037617D /* ViewController.swift */; };
+		BE0AF5852C6337380037617D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BE0AF5842C6337380037617D /* Base */; };
+		BE0AF5872C6337390037617D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE0AF5862C6337390037617D /* Assets.xcassets */; };
+		BE0AF58A2C6337390037617D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BE0AF5892C6337390037617D /* Base */; };
+		BE0AF5942C63384E0037617D /* NetworkServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF5932C63384E0037617D /* NetworkServiceProvider.swift */; };
+		BE0AF5962C6338740037617D /* NetworkServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF5952C6338740037617D /* NetworkServiceImplementation.swift */; };
+		BE0AF5982C63388A0037617D /* NetworkEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF5972C63388A0037617D /* NetworkEndPoint.swift */; };
+		BE0AF59A2C63389C0037617D /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF5992C63389C0037617D /* NetworkError.swift */; };
+		BE0AF59C2C6338AF0037617D /* NetworkPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF59B2C6338AF0037617D /* NetworkPath.swift */; };
+		BE0AF59E2C6338C90037617D /* NetworkBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF59D2C6338C90037617D /* NetworkBuilder.swift */; };
+		BE0AF5A12C633FA60037617D /* UniversityListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF5A02C633FA60037617D /* UniversityListRouter.swift */; };
+		BE0AF5A32C633FC10037617D /* UniversityListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF5A22C633FC10037617D /* UniversityListEntity.swift */; };
+		BE0AF5A72C633FD80037617D /* UniversityListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF5A62C633FD80037617D /* UniversityListPresenter.swift */; };
+		BE0AF5A92C633FE30037617D /* UniversityListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF5A82C633FE30037617D /* UniversityListInteractor.swift */; };
+		BE0AF5AB2C633FF40037617D /* UniversityListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF5AA2C633FF40037617D /* UniversityListVC.swift */; };
+		BE0AF5AE2C63428F0037617D /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF5AD2C63428F0037617D /* APICaller.swift */; };
+		BE0AF5B02C6343000037617D /* APICallHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF5AF2C6343000037617D /* APICallHandler.swift */; };
+		BE0AF5B32C6345A10037617D /* LocalDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF5B22C6345A10037617D /* LocalDataHandler.swift */; };
+		BE0AF5B62C6349950037617D /* RemoteDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF5B52C6349950037617D /* RemoteDataHandler.swift */; };
+		BE0AF5B92C634A040037617D /* UniversityDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF5B82C634A040037617D /* UniversityDataHandler.swift */; };
+		BE0AF5BB2C6355580037617D /* PersistentDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF5BA2C6355580037617D /* PersistentDataStorage.swift */; };
+		BE0AF5BE2C6357170037617D /* CoreDataHandler+Dataclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF5BD2C6357170037617D /* CoreDataHandler+Dataclass.swift */; };
+		BE0AF5C02C6357330037617D /* CoreDataHandler+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF5BF2C6357330037617D /* CoreDataHandler+Properties.swift */; };
+		BE0AF5C32C6358CD0037617D /* AssessmentViper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF5C12C6358CD0037617D /* AssessmentViper.xcdatamodeld */; };
+		BE0AF5C62C6372A00037617D /* UniversityDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF5C52C6372A00037617D /* UniversityDetailVC.swift */; };
+		BE0AF5C82C6373530037617D /* UniversityDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF5C72C6373530037617D /* UniversityDetailInteractor.swift */; };
+		BE0AF5CA2C63736E0037617D /* UniversityDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF5C92C63736E0037617D /* UniversityDetailPresenter.swift */; };
+		BE0AF5CC2C6373860037617D /* UniversityDetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF5CB2C6373860037617D /* UniversityDetailEntity.swift */; };
+		BE0AF5CE2C6373B80037617D /* UniversityDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0AF5CD2C6373B80037617D /* UniversityDetailRouter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BE0AF57A2C6337380037617D /* AssessmentViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssessmentViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE0AF57D2C6337380037617D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE0AF5812C6337380037617D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE0AF5842C6337380037617D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE0AF5862C6337390037617D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE0AF5892C6337390037617D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE0AF58B2C6337390037617D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE0AF5932C63384E0037617D /* NetworkServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProvider.swift; sourceTree = "<group>"; };
+		BE0AF5952C6338740037617D /* NetworkServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceImplementation.swift; sourceTree = "<group>"; };
+		BE0AF5972C63388A0037617D /* NetworkEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEndPoint.swift; sourceTree = "<group>"; };
+		BE0AF5992C63389C0037617D /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		BE0AF59B2C6338AF0037617D /* NetworkPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPath.swift; sourceTree = "<group>"; };
+		BE0AF59D2C6338C90037617D /* NetworkBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkBuilder.swift; sourceTree = "<group>"; };
+		BE0AF5A02C633FA60037617D /* UniversityListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityListRouter.swift; sourceTree = "<group>"; };
+		BE0AF5A22C633FC10037617D /* UniversityListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityListEntity.swift; sourceTree = "<group>"; };
+		BE0AF5A62C633FD80037617D /* UniversityListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityListPresenter.swift; sourceTree = "<group>"; };
+		BE0AF5A82C633FE30037617D /* UniversityListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityListInteractor.swift; sourceTree = "<group>"; };
+		BE0AF5AA2C633FF40037617D /* UniversityListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityListVC.swift; sourceTree = "<group>"; };
+		BE0AF5AD2C63428F0037617D /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		BE0AF5AF2C6343000037617D /* APICallHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallHandler.swift; sourceTree = "<group>"; };
+		BE0AF5B22C6345A10037617D /* LocalDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataHandler.swift; sourceTree = "<group>"; };
+		BE0AF5B52C6349950037617D /* RemoteDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataHandler.swift; sourceTree = "<group>"; };
+		BE0AF5B82C634A040037617D /* UniversityDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityDataHandler.swift; sourceTree = "<group>"; };
+		BE0AF5BA2C6355580037617D /* PersistentDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentDataStorage.swift; sourceTree = "<group>"; };
+		BE0AF5BD2C6357170037617D /* CoreDataHandler+Dataclass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataHandler+Dataclass.swift"; sourceTree = "<group>"; };
+		BE0AF5BF2C6357330037617D /* CoreDataHandler+Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataHandler+Properties.swift"; sourceTree = "<group>"; };
+		BE0AF5C22C6358CD0037617D /* VIPERAssignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VIPERAssignment.xcdatamodel; sourceTree = "<group>"; };
+		BE0AF5C52C6372A00037617D /* UniversityDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityDetailVC.swift; sourceTree = "<group>"; };
+		BE0AF5C72C6373530037617D /* UniversityDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityDetailInteractor.swift; sourceTree = "<group>"; };
+		BE0AF5C92C63736E0037617D /* UniversityDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityDetailPresenter.swift; sourceTree = "<group>"; };
+		BE0AF5CB2C6373860037617D /* UniversityDetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityDetailEntity.swift; sourceTree = "<group>"; };
+		BE0AF5CD2C6373B80037617D /* UniversityDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityDetailRouter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE0AF5772C6337380037617D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE0AF5712C6337380037617D = {
+			isa = PBXGroup;
+			children = (
+				BE0AF57C2C6337380037617D /* AssessmentViper */,
+				BE0AF57B2C6337380037617D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE0AF57B2C6337380037617D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE0AF57A2C6337380037617D /* AssessmentViper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE0AF57C2C6337380037617D /* AssessmentViper */ = {
+			isa = PBXGroup;
+			children = (
+				BE0AF57D2C6337380037617D /* AppDelegate.swift */,
+				BE0AF5812C6337380037617D /* ViewController.swift */,
+				BE0AF5C42C636F240037617D /* UniversityDetail */,
+				BE0AF59F2C633F750037617D /* UniversityList */,
+				BE0AF5AC2C6342360037617D /* APICallHandler */,
+				BE0AF5922C6337EA0037617D /* NetworkServiceProviderModule */,
+				BE0AF5832C6337380037617D /* Main.storyboard */,
+				BE0AF5862C6337390037617D /* Assets.xcassets */,
+				BE0AF5882C6337390037617D /* LaunchScreen.storyboard */,
+				BE0AF58B2C6337390037617D /* Info.plist */,
+				BE0AF5C12C6358CD0037617D /* AssessmentViper.xcdatamodeld */,
+			);
+			path = AssessmentViper;
+			sourceTree = "<group>";
+		};
+		BE0AF5922C6337EA0037617D /* NetworkServiceProviderModule */ = {
+			isa = PBXGroup;
+			children = (
+				BE0AF5932C63384E0037617D /* NetworkServiceProvider.swift */,
+				BE0AF5952C6338740037617D /* NetworkServiceImplementation.swift */,
+				BE0AF5972C63388A0037617D /* NetworkEndPoint.swift */,
+				BE0AF5992C63389C0037617D /* NetworkError.swift */,
+				BE0AF59B2C6338AF0037617D /* NetworkPath.swift */,
+				BE0AF59D2C6338C90037617D /* NetworkBuilder.swift */,
+			);
+			path = NetworkServiceProviderModule;
+			sourceTree = "<group>";
+		};
+		BE0AF59F2C633F750037617D /* UniversityList */ = {
+			isa = PBXGroup;
+			children = (
+				BE0AF5AA2C633FF40037617D /* UniversityListVC.swift */,
+				BE0AF5A82C633FE30037617D /* UniversityListInteractor.swift */,
+				BE0AF5A62C633FD80037617D /* UniversityListPresenter.swift */,
+				BE0AF5A22C633FC10037617D /* UniversityListEntity.swift */,
+				BE0AF5A02C633FA60037617D /* UniversityListRouter.swift */,
+			);
+			path = UniversityList;
+			sourceTree = "<group>";
+		};
+		BE0AF5AC2C6342360037617D /* APICallHandler */ = {
+			isa = PBXGroup;
+			children = (
+				BE0AF5AD2C63428F0037617D /* APICaller.swift */,
+				BE0AF5AF2C6343000037617D /* APICallHandler.swift */,
+				BE0AF5B72C6349F40037617D /* UniversityDataHandler */,
+				BE0AF5B42C6349840037617D /* RemoteDataHandler */,
+				BE0AF5B12C63458B0037617D /* LocalDataHandler */,
+			);
+			path = APICallHandler;
+			sourceTree = "<group>";
+		};
+		BE0AF5B12C63458B0037617D /* LocalDataHandler */ = {
+			isa = PBXGroup;
+			children = (
+				BE0AF5B22C6345A10037617D /* LocalDataHandler.swift */,
+				BE0AF5BA2C6355580037617D /* PersistentDataStorage.swift */,
+				BE0AF5BC2C6355D60037617D /* CoreDataHandler */,
+			);
+			path = LocalDataHandler;
+			sourceTree = "<group>";
+		};
+		BE0AF5B42C6349840037617D /* RemoteDataHandler */ = {
+			isa = PBXGroup;
+			children = (
+				BE0AF5B52C6349950037617D /* RemoteDataHandler.swift */,
+			);
+			path = RemoteDataHandler;
+			sourceTree = "<group>";
+		};
+		BE0AF5B72C6349F40037617D /* UniversityDataHandler */ = {
+			isa = PBXGroup;
+			children = (
+				BE0AF5B82C634A040037617D /* UniversityDataHandler.swift */,
+			);
+			path = UniversityDataHandler;
+			sourceTree = "<group>";
+		};
+		BE0AF5BC2C6355D60037617D /* CoreDataHandler */ = {
+			isa = PBXGroup;
+			children = (
+				BE0AF5BD2C6357170037617D /* CoreDataHandler+Dataclass.swift */,
+				BE0AF5BF2C6357330037617D /* CoreDataHandler+Properties.swift */,
+			);
+			path = CoreDataHandler;
+			sourceTree = "<group>";
+		};
+		BE0AF5C42C636F240037617D /* UniversityDetail */ = {
+			isa = PBXGroup;
+			children = (
+				BE0AF5C52C6372A00037617D /* UniversityDetailVC.swift */,
+				BE0AF5C72C6373530037617D /* UniversityDetailInteractor.swift */,
+				BE0AF5C92C63736E0037617D /* UniversityDetailPresenter.swift */,
+				BE0AF5CB2C6373860037617D /* UniversityDetailEntity.swift */,
+				BE0AF5CD2C6373B80037617D /* UniversityDetailRouter.swift */,
+			);
+			path = UniversityDetail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE0AF5792C6337380037617D /* AssessmentViper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE0AF58E2C6337390037617D /* Build configuration list for PBXNativeTarget "AssessmentViper" */;
+			buildPhases = (
+				BE0AF5762C6337380037617D /* Sources */,
+				BE0AF5772C6337380037617D /* Frameworks */,
+				BE0AF5782C6337380037617D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AssessmentViper;
+			productName = AssessmentViper;
+			productReference = BE0AF57A2C6337380037617D /* AssessmentViper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE0AF5722C6337380037617D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					BE0AF5792C6337380037617D = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = BE0AF5752C6337380037617D /* Build configuration list for PBXProject "AssessmentViper" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE0AF5712C6337380037617D;
+			productRefGroup = BE0AF57B2C6337380037617D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE0AF5792C6337380037617D /* AssessmentViper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE0AF5782C6337380037617D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE0AF5872C6337390037617D /* Assets.xcassets in Resources */,
+				BE0AF58A2C6337390037617D /* Base in Resources */,
+				BE0AF5852C6337380037617D /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE0AF5762C6337380037617D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE0AF5B92C634A040037617D /* UniversityDataHandler.swift in Sources */,
+				BE0AF5BE2C6357170037617D /* CoreDataHandler+Dataclass.swift in Sources */,
+				BE0AF5AB2C633FF40037617D /* UniversityListVC.swift in Sources */,
+				BE0AF5A92C633FE30037617D /* UniversityListInteractor.swift in Sources */,
+				BE0AF5B32C6345A10037617D /* LocalDataHandler.swift in Sources */,
+				BE0AF5962C6338740037617D /* NetworkServiceImplementation.swift in Sources */,
+				BE0AF5CE2C6373B80037617D /* UniversityDetailRouter.swift in Sources */,
+				BE0AF5C82C6373530037617D /* UniversityDetailInteractor.swift in Sources */,
+				BE0AF5B02C6343000037617D /* APICallHandler.swift in Sources */,
+				BE0AF59A2C63389C0037617D /* NetworkError.swift in Sources */,
+				BE0AF5A72C633FD80037617D /* UniversityListPresenter.swift in Sources */,
+				BE0AF5A32C633FC10037617D /* UniversityListEntity.swift in Sources */,
+				BE0AF5C62C6372A00037617D /* UniversityDetailVC.swift in Sources */,
+				BE0AF5B62C6349950037617D /* RemoteDataHandler.swift in Sources */,
+				BE0AF5822C6337380037617D /* ViewController.swift in Sources */,
+				BE0AF59C2C6338AF0037617D /* NetworkPath.swift in Sources */,
+				BE0AF59E2C6338C90037617D /* NetworkBuilder.swift in Sources */,
+				BE0AF5AE2C63428F0037617D /* APICaller.swift in Sources */,
+				BE0AF5942C63384E0037617D /* NetworkServiceProvider.swift in Sources */,
+				BE0AF5982C63388A0037617D /* NetworkEndPoint.swift in Sources */,
+				BE0AF57E2C6337380037617D /* AppDelegate.swift in Sources */,
+				BE0AF5A12C633FA60037617D /* UniversityListRouter.swift in Sources */,
+				BE0AF5BB2C6355580037617D /* PersistentDataStorage.swift in Sources */,
+				BE0AF5C02C6357330037617D /* CoreDataHandler+Properties.swift in Sources */,
+				BE0AF5CC2C6373860037617D /* UniversityDetailEntity.swift in Sources */,
+				BE0AF5C32C6358CD0037617D /* AssessmentViper.xcdatamodeld in Sources */,
+				BE0AF5CA2C63736E0037617D /* UniversityDetailPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BE0AF5832C6337380037617D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE0AF5842C6337380037617D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE0AF5882C6337390037617D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE0AF5892C6337390037617D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE0AF58C2C6337390037617D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE0AF58D2C6337390037617D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE0AF58F2C6337390037617D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AssessmentViper/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AssessmentViper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE0AF5902C6337390037617D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AssessmentViper/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AssessmentViper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE0AF5752C6337380037617D /* Build configuration list for PBXProject "AssessmentViper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE0AF58C2C6337390037617D /* Debug */,
+				BE0AF58D2C6337390037617D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE0AF58E2C6337390037617D /* Build configuration list for PBXNativeTarget "AssessmentViper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE0AF58F2C6337390037617D /* Debug */,
+				BE0AF5902C6337390037617D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BE0AF5C12C6358CD0037617D /* AssessmentViper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BE0AF5C22C6358CD0037617D /* VIPERAssignment.xcdatamodel */,
+			);
+			currentVersion = BE0AF5C22C6358CD0037617D /* VIPERAssignment.xcdatamodel */;
+			name = AssessmentViper.xcdatamodeld;
+			path = /Users/ruchit/Documents/Myprojects/AssessmentViper/AssessmentViper/AssessmentViper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BE0AF5722C6337380037617D /* Project object */;
+}
